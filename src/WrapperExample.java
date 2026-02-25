@@ -22,6 +22,11 @@ public class WrapperExample {
         //but i cannot do this
         //Gunjan=new A("new name");4
         //when a non primitive is final you cannot reassign it
+        A obj=new A("kfeffqw"); //this will just give me a random value
+        //but i don't want that
+        //i want that whenever i call the object the name and a number get printed
+        //this is where we use override-> why?
+        //because println internally calls the toString method, so if we don't have the toString method defined in our class then it will use the default toString method
 
 
 
