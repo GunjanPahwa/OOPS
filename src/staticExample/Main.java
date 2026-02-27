@@ -15,10 +15,18 @@ public class Main {
     //we know that something that is not static belongs to an object
     void greeting(){ //this is dependent of objects
         System.out.println("Hello World!");
+        fun(); //we can have a static member inside a non static one
+        //this is because at the end it will run inside psvm and an object would be made for it there
+
     }
     static void fun(){ //this is not dependent on objects
       //  greeting(); this will also give error
         //we can't use this because it requires an instance
         //but the function you are using it in does not require an instance
+        //so how do i make it work
+        Main obj=new Main();
+        obj.greeting();
+        //you cannot access non static stuff without referencing their instances in a static context
+
     }
 }
